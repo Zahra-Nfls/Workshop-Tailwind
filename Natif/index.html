@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Learning Tailwind</title>
+</head>
+<body>
+    <header class="flex justify-center mt-10">
+        <div>
+            <h1 class="text-4xl text-red-500">𝖨𝗇𝗌𝖼𝗋𝗂𝗉𝗍𝗂𝗈𝗇</h1>
+        </div>
+    </header>
+
+    <main class="p-10 ">
+        <div class="flex justify-center " >
+            <form action="#" method="POST" class="flex justify-center flex-col bg-red-200 rounded p-14">
+                <div class="flex flex-col my-2">
+                    <label for="first-name">Prénom</label>
+                    <input type="text" id="first-name" name="first-name" required class="rounded">
+                </div>
+
+                <div class="flex flex-col my-2">
+                    <label for="last-name">Nom</label>
+                    <input type="text" id="last-name" name="last-name" required class="rounded">
+                </div>
+
+                <div class="flex flex-col my-2">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required class="rounded">
+                </div>
+
+                <div class="flex flex-col my-2">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required class="rounded">
+                </div>
+
+                <div class="flex flex-col my-2">
+                    <label for="confirm-password" >Confirmer le mot de passe</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required class="rounded">
+                </div>
+
+                <div class="flex flex-col my-2">
+                    <label for="country" class="flex flex-col">Pays</label>
+                    <select id="country" name="country" class="rounded">
+                        <option>Belgique</option>
+                        <option>France</option>
+                        <option>Suisse</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">J'accepte les termes et conditions</label>
+                </div>
+
+                <div class="flex justify-center mt-8 ">
+                    <button type="" class="bg-red-400 rounded p-3 transform hover:scale-110 transition-transform duration-300">S'inscrire</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p class="flex justify-center">&copy; 2024 Tailwind Workshop</p>
+        </div>
+    </footer>
+</body>
+</html>
